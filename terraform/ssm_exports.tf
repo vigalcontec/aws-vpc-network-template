@@ -5,7 +5,7 @@
 # Path convention: /{project}/{environment}/vpc/{parameter}
 
 locals {
-  ssm_prefix = "/${local.project_name}/${var.environment}/vpc"
+  ssm_prefix = "/${var.environment}/${local.project_name}/vpc"
 }
 
 # -----------------------------------------------------------------------------
